@@ -1,5 +1,6 @@
 package org.tamcodes.functionalInterface;
 
+import java.util.function.BiFunction;
 import java.util.function.Function;
 
 public class _Function {
@@ -17,6 +18,8 @@ public class _Function {
         Function<Integer, Integer> integerIntegerFunction = incrementByOneFunction.andThen(multiplyBy10Function);
         System.out.println(integerIntegerFunction.apply(8));
 
+        System.out.println(addTwoNumsBiFunction.apply(5,4));
+
     }
 
     static int increment(int num){
@@ -26,5 +29,7 @@ public class _Function {
     static Function<Integer, Integer> incrementByOneFunction = num -> num+1; // this is a Function interface
 
     static Function<Integer, Integer> multiplyBy10Function = num -> num * 10; // this is a Function interface
+
+    static BiFunction<Integer, Integer, Integer> addTwoNumsBiFunction = (num1, num2) -> num1+num2;
 
 }
