@@ -18,7 +18,7 @@ public class _Consumer {
 
         cusCheckBiConsumer.accept(cus1, false);
 
-        cusCheckBiConsumer.accept(cus2, false);
+        cusCheckBiConsumer.accept(cus2, true);
 
 
     }
