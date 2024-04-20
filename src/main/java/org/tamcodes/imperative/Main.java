@@ -35,6 +35,7 @@ public class Main {
         );
 
         // Imperative approach
+        System.out.println("\nImperative approach");
         List<Person> females = new ArrayList<>();
 
         for(Person person : people){
@@ -49,6 +50,7 @@ public class Main {
 
 
         // Declarative approach
+        System.out.println("\nDeclarative approach");
 
 //        List<Person> femalesStream =
                 people.stream()
